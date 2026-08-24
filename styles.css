@@ -686,7 +686,7 @@ h1, h2, h3, h4 {
 /* ---------- Portfolio ---------- */
 .portfolio-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 26px;
 }
 
@@ -704,7 +704,7 @@ h1, h2, h3, h4 {
 }
 
 .case-media {
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 1000 / 460;
   position: relative;
   background: linear-gradient(135deg, rgba(212, 160, 23, 0.14), rgba(20, 17, 12, 0.6));
   display: flex;
@@ -768,6 +768,36 @@ h1, h2, h3, h4 {
 .case-body p {
   color: var(--text-muted);
   font-size: 0.88rem;
+}
+
+.case-stats {
+  display: flex;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.case-stat {
+  flex: 1;
+  background: var(--bg-elevated);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.case-stat-num {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--gold-light);
+}
+
+.case-stat-label {
+  font-size: 0.72rem;
+  color: var(--text-dim);
+  letter-spacing: 0.03em;
 }
 
 /* ---------- Packages ---------- */
